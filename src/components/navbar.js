@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 export default function NavigationBar() {
     return(
         <Navbar  light expand="md">
+
           <NavbarBrand ><h1>Xiaofan Li</h1></NavbarBrand>
             <Nav className="ml-auto" navbar>
 

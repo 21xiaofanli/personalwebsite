@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-.carousel-inner .item img {
-    width: 50% !important;
-    }
+.carousel { width: 85% !important;  }
+.carousel-inner > .carousel-item > img {border-radius: 25px; }
+
+br {
+    display: block;
+    margin: 1px 0;
+ }
