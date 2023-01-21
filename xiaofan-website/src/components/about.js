@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useSyncExternalStore } from "react";
 import {Row, Col, Container, UncontrolledCarousel} from "reactstrap";
-import pfp from "../pictures/pfp.png";
 const carouselItems = [
     {
       src: require("../pictures/pfp.png"),
-      header: "Me!",
-      caption: "On my trip in Amsterdam"
+      header: " ",
+      caption: "Me"
     },
     {
-      src: require("../pictures/pfp.png"),
-      altText: "Slide 2",
-      caption: "In the Moment"
+      src: require("../pictures/hackathon.jpg"),
+      header: " ",
+      caption: "Team Photo after Hackathon"
     },
     {
-      src: require("../pictures/pfp.png"),
-      altText: "Slide 3",
-      caption: "Full of Conviction"
-    }
+      src: require("../pictures/web.jpeg"),
+      header: " ",
+      caption: "Bouldering"
+    },
+    {
+        src: require("../pictures/h4i.jpg"),
+        header: " ",
+        caption: "Hack4Impact Group Photo"
+      },
+    {
+        src: require("../pictures/doge.jpg"),
+        header: " ",
+        caption: "My dog Xiaopan"
+      },
   ];
 
 export default function About() {

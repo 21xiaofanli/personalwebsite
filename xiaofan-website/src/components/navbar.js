@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar, NavbarBrand, NavLink, NavItem, Nav} from "reactstrap";
 import { BsLinkedin } from 'react-icons/bs';
 import { GoMarkGithub } from "react-icons/go";
-import { HiOutlineMail } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 
 
 
@@ -14,13 +14,13 @@ export default function NavigationBar() {
             <Nav className="ml-auto" navbar>
 
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap"><BsLinkedin size={30}/> </NavLink>
+                <NavLink href="https://www.linkedin.com/in/xiaofan-li/" target="_blank" rel="noreferrer"><BsLinkedin size={30}/> </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap"><GoMarkGithub size={30}/> </NavLink>
+                <NavLink href="https://github.com/21xiaofanli" target="_blank" rel="noreferrer"><GoMarkGithub size={30}/> </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap"><HiOutlineMail size={30}/> </NavLink>
+                <NavLink href = "https://mail.google.com/mail/?view=cm&fs=1&to=xl121@illinois.edu" target="_blank" rel="noreferrer"><MdEmail size={35}/> </NavLink>
               </NavItem>
              
             </Nav>
