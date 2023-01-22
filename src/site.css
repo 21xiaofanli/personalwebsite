@@ -11,3 +11,18 @@ br {
     display: block;
     margin: 1px 0;
  }
+
+ .navbar-nav > li{
+    padding-right:10px;
+  }
+
+  .navbar-brand
+  {
+       margin-left:10px !important;
+  }
+
+  .navbar {
+    padding-top: 20px;
+    padding-bottom :25px;
+}
+

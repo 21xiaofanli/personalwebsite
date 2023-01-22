@@ -14,7 +14,7 @@ export default function NavigationBar() {
           <NavbarBrand ><h1>Xiaofan Li</h1></NavbarBrand>
             <Nav className="ml-auto" navbar>
 
-              <NavItem>
+              <NavItem >
                 <NavLink href="https://www.linkedin.com/in/xiaofan-li/" target="_blank" rel="noreferrer"><BsLinkedin size={30}/> </NavLink>
               </NavItem>
               <NavItem>

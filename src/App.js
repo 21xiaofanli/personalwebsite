@@ -4,8 +4,7 @@ import About from './components/about'
 import NavigationBar from './components/navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/fonts.css';
-
+import './site.css';
 class App extends Component {
   render() {
     return (
