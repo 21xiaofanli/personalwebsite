@@ -1,23 +1,27 @@
 {
-  "main.css": "/static/css/main.c843057a.chunk.css",
-  "main.js": "/static/js/main.2b50fd37.chunk.js",
-  "main.js.map": "/static/js/main.2b50fd37.chunk.js.map",
-  "static/js/1.5bff5668.chunk.js": "/static/js/1.5bff5668.chunk.js",
-  "static/js/1.5bff5668.chunk.js.map": "/static/js/1.5bff5668.chunk.js.map",
-  "static/css/2.589fc128.chunk.css": "/static/css/2.589fc128.chunk.css",
-  "static/js/2.8f946235.chunk.js": "/static/js/2.8f946235.chunk.js",
-  "static/js/2.8f946235.chunk.js.map": "/static/js/2.8f946235.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.cf32845b.js",
-  "runtime~main.js.map": "/static/js/runtime~main.cf32845b.js.map",
-  "static/media/pfp.png": "/static/media/pfp.3c3c585b.png",
-  "static/media/hackathon.jpg": "/static/media/hackathon.baedf80e.jpg",
-  "static/media/web.jpeg": "/static/media/web.5ded6c7a.jpeg",
-  "static/media/h4i.jpg": "/static/media/h4i.6f78df09.jpg",
-  "static/media/seals.jpeg": "/static/media/seals.3a506603.jpeg",
-  "static/media/doge.jpg": "/static/media/doge.c54ad18b.jpg",
-  "static/css/main.c843057a.chunk.css.map": "/static/css/main.c843057a.chunk.css.map",
-  "static/css/2.589fc128.chunk.css.map": "/static/css/2.589fc128.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.498aca6f7b88bceaaa71b703260fc563.js": "/precache-manifest.498aca6f7b88bceaaa71b703260fc563.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.b29d06b6.css",
+    "main.js": "/static/js/main.dc2f52f1.js",
+    "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
+    "static/media/chris.jpg": "/static/media/chris.b5bbb0a9ae02d6127232.jpg",
+    "static/media/caterpillarhack.jpg": "/static/media/caterpillarhack.0a76511707c82927edfb.jpg",
+    "static/media/hackathon.jpg": "/static/media/hackathon.2075b3a52f0e1ca97907.jpg",
+    "static/media/rooftoproomies.jpg": "/static/media/rooftoproomies.2f2e1849f06c641edc6e.jpg",
+    "static/media/pfp.png": "/static/media/pfp.40611b47b7fc7102a780.png",
+    "static/media/fam.jpg": "/static/media/fam.241804b9f3758d203654.jpg",
+    "static/media/h4i.jpg": "/static/media/h4i.8bbfb1d073f199f05e41.jpg",
+    "static/media/web.jpeg": "/static/media/web.8678d67fee8bdfc25dad.jpeg",
+    "static/media/doge.jpg": "/static/media/doge.a82930f6193eeaede5eb.jpg",
+    "static/media/seals.jpeg": "/static/media/seals.88610177153f2a36ca0b.jpeg",
+    "static/media/unofficial.jpeg": "/static/media/unofficial.e01a92ccf0fccd2b2af4.jpeg",
+    "static/media/ai.jpg": "/static/media/ai.33ac0a702fe8cdb67b8f.jpg",
+    "index.html": "/index.html",
+    "main.b29d06b6.css.map": "/static/css/main.b29d06b6.css.map",
+    "main.dc2f52f1.js.map": "/static/js/main.dc2f52f1.js.map",
+    "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29d06b6.css",
+    "static/js/main.dc2f52f1.js"
+  ]
 }
