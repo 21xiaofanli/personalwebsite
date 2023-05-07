@@ -3,26 +3,3 @@
 body {
     font-family: 'Manrope', sans-serif;
 }
-
-.carousel { width: 85% !important;  }
-.carousel-inner > .carousel-item > img {border-radius: 25px; }
-
-br {
-    display: block;
-    margin: 1px 0;
- }
-
- .navbar-nav > li{
-    padding-right:10px;
-  }
-
-  .navbar-brand
-  {
-       margin-left:10px !important;
-  }
-
-  .navbar {
-    padding-top: 20px;
-    padding-bottom :25px;
-}
-

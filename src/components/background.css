@@ -1,0 +1,98 @@
+
+  #layers {
+      height: 400px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+  }
+  
+  #layers .layer {
+      background-size: auto 100%;
+      background-position: 60% 0;
+      background-repeat: repeat-x;
+      height: 350px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translate3d(0, 0, 0);
+      width: 200vw;
+  }
+  
+  @keyframes twinkle {
+      from { opacity: .3; }
+      to { opacity: 1; }
+  }
+  
+  @keyframes layer-1 {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-689px, 0, 0); }
+  }
+  #layers .layer:nth-child(1) {
+      animation: twinkle 5s ease-in -5s infinite alternate, layer-1 60s linear infinite;
+      background-image: url('http://imgur.com/9beLKl9.png');
+  }
+  
+  @keyframes layer-2 {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-699px, 0, 0); }
+  }
+  #layers .layer:nth-child(2) {
+      animation: twinkle 3s ease-in -3s infinite alternate, layer-2 60s linear infinite;
+      background-image: url('http://imgur.com/46MRYFa.png');
+  }
+  
+  @keyframes layer-3 {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-699px, 0, 0); }
+  }
+  #layers .layer:nth-child(3) {
+      animation: twinkle 3.5s ease-in infinite alternate, layer-3 60s linear infinite;
+      background-image: url('http://imgur.com/46MRYFa.png');
+  }
+  
+  @keyframes layer-4 {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-480px, 0, 0); }
+  }
+  #layers .layer:nth-child(4) {
+      animation: twinkle 4s ease-in -2s infinite alternate, layer-4 40s linear infinite;
+      background-image: url('http://imgur.com/BqkETyl.png');
+  }
+  
+  @keyframes layer-5 {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-886px, 0, 0); }
+  }
+  #layers .layer:nth-child(5) {
+      animation: twinkle 3.5s ease-in infinite alternate, layer-5 40s linear infinite;
+      background-image: url('http://imgur.com/x1GB77K.png');
+  }
+  
+  @keyframes shooting-star {
+      0% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+      }
+      25% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+          transform: translate3d(-270px, 180px, 0);
+      }
+  }
+  
+  #layers:before {
+      animation: 500ms linear 1s shooting-star ;
+      background-image: url('http://imgur.com/ilhrli3.png');
+      background-size: 72px 50px;
+      content: ' ';
+      height: 50px;
+      left: 80%;
+      position: absolute;
+      top: -50px;
+      width: 72px;
+      z-index: 100;
+  }
