@@ -1,42 +1,46 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, NavLink, NavItem, Nav } from 'reactstrap';
-
+import { Navbar, NavItem, Nav } from 'reactstrap';
+import { Link } from 'react-router-dom';
 export default function SecondaryNavigationBar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  // const [prevScrollPos, setPrevScrollPos] = useState(0);
+  // const [visible, setVisible] = useState(false);
 
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
-
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.pageYOffset;
+  //     setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos === 0);
+  //     setPrevScrollPos(currentScrollPos);
+  //   };
+  
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [prevScrollPos, visible]);
   return (
-    <div className={`fixed bottom-0 z-10 w-full ${visible ? 'block' : 'hidden transition ease-out duration-500'}`} style={{ transitionDelay: visible ? '0ms' : '500ms' }}>
-      <Navbar light expand="md" className="pt-20 pb-25 text-lg text-white bg-blue">
+    <div className='fixed-bottom bg-[#080c1f]'>
+      <Navbar light expand="md" variant="dark">
         <Nav className="ml-auto text-white" navbar>
+        <NavItem className="pr-8 text-white">
+            <Link to='/home'>
+              <div className="text-white">Home</div>
+            </Link>
+          </NavItem>
           <NavItem className="pr-8 text-white">
-            <NavLink href="https://www.linkedin.com/in/xiaofan-li/" target="_blank" rel="noreferrer">
+            <Link to='/projects' >
               <div className="text-white">Projects</div>
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem className="pr-8 text-white">
-            <NavLink href="https://github.com/21xiaofanli" target="_blank" rel="noreferrer">
+            <Link to="/experiences">
               <div className="text-white">Experiences</div>
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem className="pr-8 text-white">
-            <NavLink href="https://mail.google.com/mail/?view=cm&fs=1&to=xl121@illinois.edu" target="_blank" rel="noreferrer">
+            <Link to="/blog">
               <div className="text-white">Blog</div>
-            </NavLink>
+            </Link>
           </NavItem>
         </Nav>
       </Navbar>
-    </div>
+    </div>  
   );
 }
