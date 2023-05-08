@@ -20,7 +20,7 @@ export default function SecondaryNavigationBar() {
       <Navbar light expand="md" variant="dark">
         <Nav className="ml-auto text-white" navbar>
         <NavItem className="pr-8 text-white">
-            <Link to='/home'>
+            <Link to='/'>
               <div className="text-white">Home</div>
             </Link>
           </NavItem>

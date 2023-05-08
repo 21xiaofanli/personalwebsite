@@ -13,10 +13,10 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <BrowserRouter>
+        <BrowserRouter basename="/personalwebsite">
           <SecondaryNavigationBar />
           <Routes>
-            <Route path="/home" element={<Homepage />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/blog" element={<Blog/>} />
