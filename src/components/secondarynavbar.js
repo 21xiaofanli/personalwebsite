@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Navbar, NavItem, Nav } from 'reactstrap';
 import { Link } from 'react-router-dom';
 export default function SecondaryNavigationBar() {
-  // const [prevScrollPos, setPrevScrollPos] = useState(0);
-  // const [visible, setVisible] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollPos = window.pageYOffset;
-  //     setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos === 0);
-  //     setPrevScrollPos(currentScrollPos);
-  //   };
-  
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, [prevScrollPos, visible]);
   return (
     <div className='fixed-bottom bg-[#080c1f]'>
       <Navbar light expand="md" variant="dark">

@@ -1,5 +1,4 @@
 import React from "react";
-import "./background.css"
 import Funfacts from "../components/accordion";
 import {Row, Col, Container, UncontrolledCarousel} from "reactstrap";
 const carouselItems = [
@@ -37,6 +36,7 @@ const carouselItems = [
 
 export default function About() {
     return(
+       
         <div className = "h-fit w-screen  ">
         <div className = "flex justify-center items-center pt-20 bg-gradient-to-t from-white to-white">
          <Container>

@@ -10,7 +10,7 @@ const images = [
   {
     src: require("./pictures/caterpillarhack.jpg"),
     caption: "04-10-23",
-    subtext: "Sophia and I won 2nd place at the Code in the dark Hackathon! We were working on our HackIllinois thrifting app, Illini Threads, at the time. However, we heard, about the event, where we were supposed to recreate a webpage in 20 min. ",
+    subtext: "Sophia and I won 2nd place at the Code in the Dark Hackathon with a bunch of other Hack4Impact members! We weren't planning on attending the event since we were busy working on our hackathon submission, but decided to go last minute. ",
   },
   {
     src: require("./pictures/unofficial.jpeg"),
