@@ -8,7 +8,7 @@ import '../site.css';
 export default function Homepage () {
   return (
     <div>
-      <Pictures></Pictures>
-    </div>
+        <p>coming soon!</p>
+            </div>
   )
 }

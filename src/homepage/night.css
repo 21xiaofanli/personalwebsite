@@ -6,6 +6,7 @@
       position: absolute;
       top: 0;
       width: 100vw;
+      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s both;
   }
   
   #layers .layer {
@@ -18,7 +19,8 @@
       top: 0;
       transform: translate3d(0, 0, 0);
       width: 200vw;
-      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)0.4s both;  }
+      
+}
      
  @keyframes slide-in-top {
         0% {
@@ -39,10 +41,10 @@
   
   @keyframes layer-1 {
       from { transform: translate3d(0, 0, 0); }
-      to { transform: translate3d(-689px, 0, 0); }
+      to { transform: translate3d(-710px, 0, 0); }
   }
   #layers .layer:nth-child(1) {
-      animation: twinkle 5s ease-in -5s infinite alternate, layer-1 60s linear infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s both, twinkle 1s ease-in -5s infinite alternate, layer-1 60s linear 1.4s infinite;
       background-image: url('http://imgur.com/9beLKl9.png');
   }
   
@@ -51,16 +53,16 @@
       to { transform: translate3d(-699px, 0, 0); }
   }
   #layers .layer:nth-child(2) {
-      animation: twinkle 3s ease-in -3s infinite alternate, layer-2 60s linear infinite;
-      background-image: url('http://imgur.com/46MRYFa.png');
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .9s both, twinkle 3s ease-in -3s infinite alternate, layer-2 60s linear 1.2s infinite;
+    background-image: url('http://imgur.com/46MRYFa.png');
   }
   
   @keyframes layer-3 {
       from { transform: translate3d(0, 0, 0); }
-      to { transform: translate3d(-699px, 0, 0); }
+      to { transform: translate3d(-720px, 0, 0); }
   }
   #layers .layer:nth-child(3) {
-      animation: twinkle 3.5s ease-in infinite alternate, layer-3 60s linear infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) .5s both, twinkle 3.5s ease-in infinite alternate, layer-3 45s linear .9s infinite;
       background-image: url('http://imgur.com/46MRYFa.png');
   }
   
@@ -69,7 +71,7 @@
       to { transform: translate3d(-480px, 0, 0); }
   }
   #layers .layer:nth-child(4) {
-      animation: twinkle 4s ease-in -2s infinite alternate, layer-4 40s linear infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) .3s both, twinkle 4s ease-in -2s infinite alternate, layer-4 45s linear .7s infinite;
       background-image: url('http://imgur.com/BqkETyl.png');
   }
   
@@ -78,7 +80,7 @@
       to { transform: translate3d(-886px, 0, 0); }
   }
   #layers .layer:nth-child(5) {
-      animation: twinkle 3.5s ease-in infinite alternate, layer-5 40s linear infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) both, twinkle 3.5s ease-in infinite alternate, layer-5 40s linear infinite;
       background-image: url('http://imgur.com/x1GB77K.png');
   }
   
@@ -97,7 +99,7 @@
   }
   
   #layers:before {
-      animation: 500ms linear 1s shooting-star ;
+      animation: 500ms linear 2s shooting-star ;
       background-image: url('http://imgur.com/ilhrli3.png');
       background-size: 72px 50px;
       content: ' ';
@@ -108,33 +110,3 @@
       width: 72px;
       z-index: 100;
   }
-
-  @-webkit-keyframes slide-in-bottom {
-    0% {
-      -webkit-transform: translateY(1000px);
-      transform: translateY(1000px);
-      opacity: 0;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slide-in-bottom {
-    0% {
-      -webkit-transform: translateY(1000px);
-      transform: translateY(1000px);
-      opacity: 0;
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  

@@ -11,17 +11,17 @@ export default function NavigationBar({color}) {
         <h1 className = {color}>Xiaofan Li</h1>
       </NavbarBrand>
       <Nav className="ml-auto" navbar>
-        <NavItem className="pr-5">
+        <NavItem className="pr-5 transform hover:scale-125 transition duration-300 ease-in-out">
           <NavLink href="https://www.linkedin.com/in/xiaofan-li/" target="_blank" rel="noreferrer">
             <BsLinkedin size={30} className = {color} />
           </NavLink>
         </NavItem>
-        <NavItem className="pr-5">
+        <NavItem className="pr-5 transform hover:scale-125 transition duration-300 ease-in-out">
           <NavLink href="https://github.com/21xiaofanli" target="_blank" rel="noreferrer">
             <GoMarkGithub size={30} className = {color}/>
           </NavLink>
         </NavItem>
-        <NavItem className = "pr-5">
+        <NavItem className = "pr-5 transform hover:scale-125 transition duration-300 ease-in-out">
           <NavLink href="https://mail.google.com/mail/?view=cm&fs=1&to=xl121@illinois.edu" target="_blank" rel="noreferrer">
             <MdEmail size={35} className = {color}/>
           </NavLink>

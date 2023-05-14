@@ -57,11 +57,13 @@ const items = [{
 export default function CustomizedTimeline() {
   return (
     <div className = "my-20">
-<Chrono items={items} mode="VERTICAL_ALTERNATING" >
+<Chrono items={items} mode="VERTICAL_ALTERNATING" slidesShow >
     <div className="chrono-icons">
-    <div className = 'scale-150'>
+    <div className = 'scale-150 my-5'>
+        <div className = "my-5">
     <img src= {require("./icons/ai.png")} alt = "hi"/>
     </div>
+   </div>
     <img src= {require("./icons/h4i.png")} alt = "hi" className = "scale-150"/>
     <img src= {require("./icons/optum.png")} alt = "hi" className = "scale-150"/>
     <img src= {require("./icons/imsa.png")} alt = "hi" className = "scale-150"/>

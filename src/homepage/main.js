@@ -4,7 +4,6 @@ import { TypeAnimation } from 'react-type-animation';
 import './night.css';
 import './day.css';
 import NavigationBar from '../components/navbar'
-import {GiFallingStar} from 'react-icons/gi';
 import {TbSunset, TbSunrise} from 'react-icons/tb';
 export default function Mainpage() {
     // const scrollDown = () =>{
@@ -64,7 +63,11 @@ export default function Mainpage() {
           />
           <br/>
                        <button onClick = {toggleTheme} className = "text-white scale-150">
+                        <div className = "transform hover:scale-125 transition duration-300 ease-in-out mt-2">
+                        <div className = "animate-bounce">
                        {theme ? <TbSunrise/> : <TbSunset/>}
+                       </div>
+                       </div>
         </button>
         </div>
       </div>

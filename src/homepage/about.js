@@ -1,5 +1,5 @@
 import React from "react";
-import Funfacts from "../components/accordion";
+import Funfacts from "../components/funfacts";
 import {Row, Col, Container, UncontrolledCarousel} from "reactstrap";
 const carouselItems = [
     {
@@ -19,33 +19,18 @@ const carouselItems = [
       },
   ];
 
-  const styles = {
-    grid: {
-        paddingLeft: 20,
-        paddingRight: 0
-    },
-    right: {
-        marginLeft: 0,
-        marginRight: 25
-    },
-    left: {
-        paddingLeft: 20,
-        marginRight: -35,
-    }
-};
 
 export default function About() {
     return(
        
-        <div className = "h-fit w-screen  ">
+        <div className = "h-fit w-screen">
         <div className = "flex justify-center items-center pt-20 bg-gradient-to-t from-white to-white">
-         <Container>
-             <Row >
-                <Col style ={styles.left}>
+            <div className = "flex flex-wrap justify-around items-center px-4">
+                <div className = "mr-5">
                  <style>{`.carousel-inner > .carousel-item > img {border-radius: 25px;}`}</style>
-                 <UncontrolledCarousel items={carouselItems} className="w-[85%]"/>
-                 </Col>
-                 <Col style ={styles.right} >
+                 <UncontrolledCarousel items={carouselItems} className="w-[40rem]"/>
+                 </div>
+                 <div className = "w-[35rem] ml-5">
                      <br></br>
                      <h2> A bit about me!</h2>
                      <br></br>
@@ -53,10 +38,8 @@ export default function About() {
                      <p> In my freetime, I like to play tennis, cards, and boulder. I have played cards since I was in elementary school, so I know a plethora of games such as Bridge, Poker, and Tractor. I have also played competitive tennis all throughout high school, and continue to play a bit during my free time in college. I recently picked up bouldering as a hobby a few months ago, and I hope to get better! </p>
                      <p> If you have any questions or would like to see my resume, please reach out to me via LinkedIn or email. Thanks for checking out my website and I hope to hear from you soon! </p>
                      <p>  - Xiaofan Li :)</p>
-
-                 </Col>
-             </Row>
-         </Container>
+                     </div>
+                     </div>
          </div>
          <h4 className = "pt-[3%] pl-[5%]"> Two of my favorite songs at the  moment:</h4>
          <div className = "grid grid-cols-2 gap-4">
@@ -67,7 +50,7 @@ export default function About() {
                      <iframe title = "hii"  src="https://open.spotify.com/embed/track/29Qre8uUWCuPUz8Oem2MYI?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                      </div>
          </div>
-         <div className = "grid grid-cols-3 gap-4 p-5">
+         <div className = "flex flex-wrap justify-around p-7 ">
          <Funfacts >
             <div>
             <h4>Funfact 1: </h4>
