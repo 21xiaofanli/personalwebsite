@@ -50,7 +50,7 @@ export default function About() {
                      <iframe title = "hii"  src="https://open.spotify.com/embed/track/29Qre8uUWCuPUz8Oem2MYI?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                      </div>
          </div>
-         <div className = "flex flex-wrap justify-around p-7 ">
+         <div className = "flex flex-wrap justify-around p-7 px-5 ">
          <Funfacts >
             <div>
             <h4>Funfact 1: </h4>

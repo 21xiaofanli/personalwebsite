@@ -29,7 +29,7 @@ const images = [
   {
     src: require("./pictures/doge.jpg"),
     caption: "08-20-22",
-    subtext: "Just a picture of my dog, Xiaopan. No other explanation needed.",
+    subtext: "Xiaopan waiting to be let back into the house after playing in the snow :)",
   },
   {
     src: require("./pictures/chris.jpg"),
