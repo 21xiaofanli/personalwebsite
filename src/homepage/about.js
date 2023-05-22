@@ -56,7 +56,7 @@ export default function About() {
             <h4>Funfact 1: </h4>
             <h5> When did I start coding?</h5>
             </div>
-            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website. It was a fun side project, but coding was just a hobby back then. It wasn't until college that I started taking it more seriously. During freshman year, I only just started to understand the CS world, and began to learn Github protocols and new technologies like React.js and PyTorch. So to answer the question, I guess you could say both high school and college! </p>
+            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website for a startup I pursued. It was a fun experience, but coding was just a hobby back then. It wasn't until college that I started taking it more seriously. During freshman year, I only just started to understand the CS world, and began to learn Github protocols and new technologies like React.js and PyTorch. So to answer the question, I guess you could say both high school and college! </p>
          </Funfacts>
          <Funfacts>
          <div>
