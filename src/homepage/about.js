@@ -31,13 +31,13 @@ export default function About() {
                  <UncontrolledCarousel items={carouselItems} className="w-[40rem]"/>
                  </div>
                  <div className = "w-[35rem] ml-5">
-                     <br></br>
+                     <br/>
                      <h2> A bit about me!</h2>
-                     <br></br>
+                     <br/>
                      <p> My name is Xiaofan Li, and I am currently a Computer Science & Statistics Student at the University of Illinois Urbana-Champaign. I am currently a Software Developer at Hack4Impact, but have completed internships at Optum, WeSolv, and Purple Ant. Along the way, I have gained experience in full-stack web development, algorithms, data analysis, and more. My mission is to create change one program at a time!</p>
                      <p> In my freetime, I like to play tennis, cards, and boulder. I have played cards since I was in elementary school, so I know a plethora of games such as Bridge, Poker, and Tractor. I have also played competitive tennis all throughout high school, and continue to play a bit during my free time in college. I recently picked up bouldering as a hobby a few months ago, and I hope to get better! </p>
-                     <p> If you have any questions or would like to see my resume, please reach out to me via LinkedIn or email. Thanks for checking out my website and I hope to hear from you soon! </p>
-                     <p>  - Xiaofan Li :)</p>
+                     <p> If you have any questions or would like to see my resume, please reach out to me via LinkedIn or email. Thanks for checking out my website and I hope to hear from you soon :) </p>
+                     <p>  - Xiaofan Li </p>
                      </div>
                      </div>
          </div>
@@ -56,21 +56,21 @@ export default function About() {
             <h4>Funfact 1: </h4>
             <h5> When did I start coding?</h5>
             </div>
-            <p> I started taking coding seriously in college! I've touched a bit of code during high school in my Intro to CS classes and a few projects, but I never committed to programming until freshman year. </p>
+            <p> I started coding in high school! I first started coding by creating a website out of HTML and CSS, and had a few other experiences here and there. However, it was a hobby that I would occasionally do,   </p>
          </Funfacts>
          <Funfacts>
          <div>
             <h4>Funfact 2: </h4>
-            <h5> What is one of my favorite memories?</h5>
+            <h5> What is my favorite project I've worked on?</h5>
             </div>
-            <p> One of my favorite memories is eating crepe cake with Chris while looking off the pier at the Statue of Liberty during golden hour in New York. It was such a surreal, peaceful moment I'll never forget.</p>
+            <p> One of my favorite projects has to be creating a mobile app to store and teach people about endangered languages for the non-profit 7000 languages. It was one of the first times I've seen my code directly affect thousands of people, such as when the clients would update us about its testing feedback from Algerian communities during our client calls, and it really made an impact on me on how code can be used for the greater good.</p>
          </Funfacts>
          <Funfacts>
          <div>
             <h4>Funfact 3: </h4>
-            <h5> Do I have any hidden talents?</h5>
+            <h5> What do I have planned for the future?</h5>
             </div>
-            <p> One of my hidden talents is rollerskating. My sister and I grew up going to local rollerskating rink weekly since I was in kindergarden. I've never gone consistenly since elementary school, but I still remember how to skate fast!  </p>
+            <p> Not sure! I've had a variet</p>
          </Funfacts>
          </div>
 

@@ -72,16 +72,17 @@ export default function App() {
       </p>
       <div className="flex flex-wrap justify-around">
         {images.map((image, index) => (
+          <div className = "p-5">
           <div
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            className="p-5 filter hover:opacity-100 transition duration-200 relative"
+            className="filter hover:opacity-100 transition duration-200 relative"
           >
             <img
               src={image.src}
               alt={image.alt}
-              className={`w-[22.5rem] h-fit rounded-lg filter transition duration-100 ${
+              className={`w-[22.5rem] h-auto object-contain rounded-lg filter transition duration-100 ${
                 hoveredIndex === index ? "opacity-50 blur-[4px]" : ""
               }`}
             />
@@ -93,6 +94,7 @@ export default function App() {
                 {image.subtext && <p className="text-sm">{image.subtext}</p>}
               </div>
             )}
+          </div>
           </div>
         ))}
       </div>

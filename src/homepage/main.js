@@ -41,7 +41,6 @@ export default function Mainpage() {
               <div class="laya-please layer-6">
               </div>
           </div>
-          <NavigationBar color = "text-[#690d0d]" />
 
     <div class="container2">
         <div class="laya-please layer-7">
@@ -50,12 +49,11 @@ export default function Mainpage() {
         </div>
     </div>
 </div>}
-<NavigationBar color = "text-white"/>
 
              <div className="flex justify-center "> 
         <div className="text-center absolute top-[43%] ">
           <TypeAnimation
-            sequence={[        'Hi, I\'m Xiaofan 👋',        1000,        'Welcome to my website! 👩🏻‍💻',        1000,      ]}
+            sequence={[        'Hi, I\'m Xiaofan 👋',        1000,        'Welcome to my website!   👩🏻‍💻',        1000,      ]}
             wrapper="span"
             cursor={true}
             // repeat={Infinity}

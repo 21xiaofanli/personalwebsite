@@ -5,7 +5,7 @@ import { GoMarkGithub } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
 export default function NavigationBar({color}) {
   return (
-    <div className = "pt-2 bg-transparent  ">
+    <div className = "pt-2 bg-transparent absolute top-0 w-full z-50">
     <Navbar light expand="md" className="pt-20 pb-25 ">
       <NavbarBrand className="ml-10 ">
         <h1 className = {color}>Xiaofan Li</h1>
