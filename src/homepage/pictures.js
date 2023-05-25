@@ -77,19 +77,19 @@ export default function App() {
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            className="filter hover:opacity-100 transition duration-200 relative"
+            className="filter hover:opacity-100 transition duration-200 relative "
           >
             <img
               src={image.src}
               alt={image.alt}
-              className={`w-[22.5rem] h-auto object-contain rounded-lg filter transition duration-100 ${
+              className={` w-96 h-auto object-contain rounded-lg filter transition duration-100 ${
                 hoveredIndex === index ? "opacity-50 blur-[4px]" : ""
               }`}
             />
             {hoveredIndex === index && (
-              <div className="absolute inset-0 flex flex-col justify-center text-left text-white px-20 z-10">
+              <div className="absolute w-96 inset-0 flex flex-col justify-center text-left text-white px-20 z-10">
                 <h2 className="text-2xl font-bold">
-                  {image.caption || "Your text here"}
+                  {image.caption || "Text incoming!"}
                 </h2>
                 {image.subtext && <p className="text-sm">{image.subtext}</p>}
               </div>

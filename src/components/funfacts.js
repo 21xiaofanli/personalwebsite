@@ -13,7 +13,7 @@ export default function Funfacts({ className, children }) {
   if (className) containerClasses.push(className)
 
   return (
-    <div className="w-[25rem] rounded-[10px] border-[3px] border-cobalt px-4 h-fit py-3 my-3">
+    <div className="w-[100%] md:w-[45%] xl:w-[30%] rounded-[10px] border-[3px] border-cobalt px-4 h-fit py-3 my-3">
         <div className="mb-2 flex flex-col gap-3">
           {folded ? childrenTruncated : children}
         </div>

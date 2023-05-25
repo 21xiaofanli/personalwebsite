@@ -25,12 +25,12 @@ export default function About() {
        
         <div className = "h-fit w-screen">
         <div className = "flex justify-center items-center pt-20 bg-gradient-to-t from-white to-white">
-            <div className = "flex flex-wrap justify-around items-center px-4">
-                <div className = "mr-5">
+            <div className = "flex flex-wrap justify-around items-center px-[4%]">
+                <div className = "mr-[1%] w-[85%] md:w-[40%]">
                  <style>{`.carousel-inner > .carousel-item > img {border-radius: 25px;}`}</style>
-                 <UncontrolledCarousel items={carouselItems} className="w-[40rem]"/>
+                 <UncontrolledCarousel items={carouselItems} className="w-full"/>
                  </div>
-                 <div className = "w-[35rem] ml-5">
+                 <div className = "w-[100%] md:w-[50%] ml-[2%]">
                      <br/>
                      <h2> A bit about me!</h2>
                      <br/>
@@ -61,14 +61,14 @@ export default function About() {
          <Funfacts>
          <div>
             <h4>Funfact 2: </h4>
-            <h5> What is my favorite project I've worked on?</h5>
+            <h5> What is my favorite project?</h5>
             </div>
             <p> One of my favorite projects has to be creating a mobile app to store and teach people about endangered languages for the non-profit 7000 languages while on Hack4Impact. It was incredible to see how my code directly impacted thousands of people, especially when we received testing feedback from Algerian communities during client calls. This was one of the moments where it dawned on me at how code can be used for the greater good.</p>
          </Funfacts>
          <Funfacts>
          <div>
             <h4>Funfact 3: </h4>
-            <h5> What do I have planned for the future?</h5>
+            <h5> What's my plan for the future?</h5>
             </div>
             <p> Not sure! I've had diverse interests over the years, including entrepreneurship, programming, and math. However, one thing remains constant: my desire to use my skills to make a positive impact on my community. As I progressed through college, my love for coding grew stronger, and it became evident that coding is something I want to hold close to my heart for a long time. Looking ahead, my goal is to merge these two passions and create meaningful change in the future! </p>
          </Funfacts>
