@@ -1,6 +1,6 @@
 import React from "react";
 import Funfacts from "../components/funfacts";
-import {Row, Col, Container, UncontrolledCarousel} from "reactstrap";
+import {UncontrolledCarousel} from "reactstrap";
 const carouselItems = [
     {
       src: require("./pictures/pfp.png"),
@@ -24,7 +24,7 @@ export default function About() {
     return(
        
         <div className = "h-fit w-screen">
-        <div className = "flex justify-center items-center pt-20 bg-gradient-to-t from-white to-white">
+        <div className = "flex justify-center items-center pt-20 ">
             <div className = "flex flex-wrap justify-around items-center px-[4%]">
                 <div className = "mr-[1%] w-[85%] md:w-[40%]">
                  <style>{`.carousel-inner > .carousel-item > img {border-radius: 25px;}`}</style>
@@ -51,21 +51,21 @@ export default function About() {
                      </div>
          </div>
          <div className = "flex flex-wrap justify-around p-7 px-5 ">
-         <Funfacts >
+         <Funfacts className = "border-[3px]">
             <div>
             <h4>Funfact 1: </h4>
             <h5> When did I start coding?</h5>
             </div>
             <p> I began my coding journey in high school, starting with HTML and CSS to create my first website for a startup I pursued. It was a fun experience, but coding was just a hobby back then. It wasn't until college that I started taking it more seriously. During freshman year, I only just started to understand the CS world, and began to learn Github protocols and new technologies like React.js and PyTorch. So to answer the question, I guess you could say both high school and college! </p>
          </Funfacts>
-         <Funfacts>
+         <Funfacts className = "border-[3px]">
          <div>
             <h4>Funfact 2: </h4>
             <h5> What is my favorite project?</h5>
             </div>
             <p> One of my favorite projects has to be creating a mobile app to store and teach people about endangered languages for the non-profit 7000 languages while on Hack4Impact. It was incredible to see how my code directly impacted thousands of people, especially when we received testing feedback from Algerian communities during client calls. This was one of the moments where it dawned on me at how code can be used for the greater good.</p>
          </Funfacts>
-         <Funfacts>
+         <Funfacts className = "border-[3px]">
          <div>
             <h4>Funfact 3: </h4>
             <h5> What's my plan for the future?</h5>

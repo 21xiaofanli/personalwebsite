@@ -3,9 +3,9 @@ import { Navbar, NavbarBrand, NavLink, NavItem, Nav } from 'reactstrap';
 import { BsLinkedin } from 'react-icons/bs';
 import { GoMarkGithub } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
-export default function NavigationBar({color}) {
+export default function NavigationBar({color, absolute = true}) {
   return (
-    <div className = "pt-2 bg-transparent absolute top-0 w-full z-50">
+    <div className={`pt-2 bg-transparent top-0 w-full z-50 ${absolute ? "absolute" : ""}`}>
     <Navbar light expand="md" className="pt-20 pb-25 ">
       <NavbarBrand className="ml-10 ">
         <h1 className = {color}>Xiaofan Li</h1>

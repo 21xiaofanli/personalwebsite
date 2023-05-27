@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 
-export default function Funfacts({ className, children }) {
+export default function Description({ className, children }) {
   const [folded, setFolded] = useState(true)
 
   let childrenTruncated = <div>{React.Children.toArray(children)[0]}</div>
@@ -13,7 +13,7 @@ export default function Funfacts({ className, children }) {
   if (className) containerClasses.push(className)
 
   return (
-    <div className={`w-[100%] md:w-[45%] xl:w-[30%] rounded-[10px] px-4 h-fit py-3 my-3 ${className}`}>
+    <div className={`w-[100%] rounded-[10px] px-4 h-fit py-3 my-3 ${className}`}>
         <div className="mb-2 flex flex-col gap-3">
           {folded ? childrenTruncated : children}
         </div>
