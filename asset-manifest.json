@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.98fe1f6b.css",
-    "main.js": "/static/js/main.2a2f0408.js",
+    "main.css": "/static/css/main.f94262e8.css",
+    "main.js": "/static/js/main.045681da.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
     "static/media/optum.png": "/static/media/optum.7dfd0082f1faa34d8ca6.png",
+    "static/media/healthyandwealthy.mp4": "/static/media/healthyandwealthy.5ff51a693182d41f710c.mp4",
     "static/media/chris.jpg": "/static/media/chris.b5bbb0a9ae02d6127232.jpg",
     "static/media/bandbuddies.mp4": "/static/media/bandbuddies.0a6793bcf0a78348aea3.mp4",
     "static/media/caterpillarhack.jpg": "/static/media/caterpillarhack.0a76511707c82927edfb.jpg",
@@ -17,15 +18,14 @@
     "static/media/doge.jpg": "/static/media/doge.a82930f6193eeaede5eb.jpg",
     "static/media/seals.jpeg": "/static/media/seals.88610177153f2a36ca0b.jpeg",
     "static/media/unofficial.jpeg": "/static/media/unofficial.e01a92ccf0fccd2b2af4.jpeg",
-    "static/media/illinithreads.png": "/static/media/illinithreads.6d9d48c09e59212930b9.png",
     "static/media/ai.jpg": "/static/media/ai.33ac0a702fe8cdb67b8f.jpg",
     "index.html": "/index.html",
-    "main.98fe1f6b.css.map": "/static/css/main.98fe1f6b.css.map",
-    "main.2a2f0408.js.map": "/static/js/main.2a2f0408.js.map",
+    "main.f94262e8.css.map": "/static/css/main.f94262e8.css.map",
+    "main.045681da.js.map": "/static/js/main.045681da.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98fe1f6b.css",
-    "static/js/main.2a2f0408.js"
+    "static/css/main.f94262e8.css",
+    "static/js/main.045681da.js"
   ]
 }
