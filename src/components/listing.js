@@ -1,11 +1,8 @@
 import React, { useRef } from 'react';
 import { Carousel } from 'react-bootstrap';
-import Funfacts from './funfacts';
 import Description from './description';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-export default function Listing({ title, text, github, carouselItems }) {
+export default function Listing({ title, text, github, tools, carouselItems }) {
   const carouselRef = useRef(null);
 
   // const handleIframeClick = () => {
@@ -63,9 +60,9 @@ export default function Listing({ title, text, github, carouselItems }) {
 
       <div className="flex flex-col items-center">
   <div className="w-fit transform hover:scale-110 transition duration-300 ease-in-out p-2 bg-black shadow-xl rounded-xl bg-opacity-50 mb-0" style={{ maxWidth: '100%' }}>
-    <Link to={item.url} className="w-fit text-white no-underline" target="_blank" rel="noopener noreferrer">
+    <a href={item.url} className="w-fit text-white no-underline" target="_blank" rel="noopener noreferrer">
       {item.desc}
-    </Link>
+    </a>
   </div>
 </div>
 
@@ -79,14 +76,19 @@ export default function Listing({ title, text, github, carouselItems }) {
             <div>
               <div class="flex justify-between mb-2">
                 <span class="order-1 text-xl font-semibold">{title}</span>
-                {github && <span class="order-2"><FaGithubAlt className = "scale-125"/></span> }
+                {github && (<span class="order-2"><div className="w-fit transform hover:scale-125 transition duration-300 ease-in-out" style={{ maxWidth: '100%' }}><a href={github} target="_blank" rel="noopener noreferrer"><FaGithubAlt className = "scale-150 text-black "/> </a></div></span>) 
+                }
               </div>
               <div className = "text-md">{text[0]}</div>
             </div>
-            <div className = "italic" >A more detailed description of the app:</div>
+            <div className = "italic" >More about the project:</div>
             <div className = "text-sm pl-8"> {text[1]}</div>
-            <div className = "italic">My contributions:</div>
-            <div className = "text-sm pl-8" > {text[2]}</div>
+            <div className = "text-xs flex justify-end"> {text[2]}</div>
+            <div className = "inline-flex flex-wrap justify-end">
+            {tools.map((tool) => (
+              <div className = "rounded-2xl bg-cyan-50 border-2 border-cyan-100 mx-1 p-1 px-2 text-sm text-cyan-700 mt-2"> {tool}</div>
+            ))}
+            </div>
          </Description>
      </div>
     </div>

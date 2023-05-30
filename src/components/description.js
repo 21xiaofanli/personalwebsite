@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import { BsArrowDown, BsArrowUp } from 'react-icons/bs'
 
-export default function Description({ className, children }) {
+export default function Description({ className, children,  }) {
   const [folded, setFolded] = useState(true)
 
   let childrenTruncated = <div>{React.Children.toArray(children)[0]}</div>
