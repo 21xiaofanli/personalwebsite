@@ -1,5 +1,6 @@
 import React from 'react'
 import Listing from '../components/listing';
+import './animation.css';
 const items = [
   {
     title: "Be+",
@@ -24,7 +25,7 @@ const items = [
   },
   {
     title: "7000 Languages",
-    text: ["On Hack4Impact, I worked as a software developer for the 7000 Languages nonprofit. Our team developed a mobile app aimed at preserving and educating people about endangered languages.",'H4I collaborated with 7000 Languages to develop a mobile app to enable users to create and access language learning courses for various languages that would otherwise be undocumented. This app is primarily catered towards language course contributers to preserving the languages before they die out, but also has the functionality to empower individuals to develop their language skills and provides a platform for sharing and learning a diverse range of language courses. As a software developer on this project, I worked on creating the update functionality and pages on the contributor side using ReactNative, Redux, and Express.js, implementing navigation, and developing Express.js API endpoints using a MongoDB aggregation pipeline that incorporates pagination and fuzzy search.', "Note: This project has been handed off to the client, awaiting its release!"],
+    text: ["On Hack4Impact, I worked as a software developer for the 7000 Languages nonprofit. Our team developed a mobile app aimed at preserving and educating people about endangered languages.",'H4I collaborated with 7000 Languages to develop a mobile app to enable users to create and access language learning courses for various languages that would otherwise be undocumented. This app is primarily catered towards language course contributers to preserving the languages before they die out, but also has the functionality to empower individuals to develop their language skills and provides a platform for sharing and learning a diverse range of language courses. As a software developer on this project, I worked on creating the update functionality and pages on the contributor side using React Native, Redux, and Express.js, implementing navigation, and developing Express.js API endpoints using a MongoDB aggregation pipeline that incorporates pagination and fuzzy search.', "Note: This project has been handed off to the client, awaiting its release!"],
     tools: ["React Native", "Redux", "Node.js","Express.js", "MongoDB", "Expo", "AWS S3"],
     github: "https://github.com/hack4impact-uiuc/7000-languages",
     carouselItems: [
@@ -127,10 +128,124 @@ const items = [
 
 export default function ScrollingList() {
     return (
-        <div>
-            {items.map((item) => (
-            <Listing title={item.title} text={item.text} tools={item.tools} carouselItems={item.carouselItems} github = {item.github}/>
-        ))}
-        </div>
+      <div className = "h-full">
+      <section class="main" >
+
+			<div class="absolute cloud_left">
+				<ul class="inline-list">
+				  <li class="cloud"></li>
+				  <li class="cloud"></li>
+				  <li class="cloud"></li>
+				</ul>
+			</div>
+
+			<div class="absolute cloud_right">
+				<ul class="inline-list">
+				  <li class="cloud"></li>
+				  <li class="cloud"></li>
+				  <li class="cloud"></li>
+				</ul>
+			</div>
+
+			<span class="absolute sun"></span>
+
+
+			<div class="absolute landscape left_m">
+
+				<span class="grass gl">
+					<span class="land_tree leftt-gras">
+						<ul class="inline-list">
+						  <li class="t_grass"></li>
+						  <li class="t_grass"></li>
+						  <li class="t_grass"></li>
+						</ul>
+					</span>
+				</span>
+
+				<span class="absolute tree1"></span>
+				<span class="absolute tree2"></span>
+			</div>
+
+			<div class="absolute landscape max_right">
+
+				<span class="grass">
+					<span class="land_tree">
+						<ul class="inline-list">
+						  <li class="t_grass"></li>
+						  <li class="t_grass"></li>
+						  <li class="t_grass"></li>
+						</ul>
+					</span>
+				</span>
+
+				<div class="mountain">
+					<div class="r-mountain"></div>
+					<ul class="snow inline-list">
+							<li></li>
+							<li></li>
+							<li></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="absolute boat">
+				<ul class="no-bullet">
+					<ul class="no-bullet fume">
+						<li class="fume4"></li>
+						<li class="fume3"></li>
+						<li class="fume2"></li>
+						<li class="fume1"></li>
+					</ul>
+					<li class="smokestack"></li>
+					<li class="white-body">
+						<ul class="windows inline-list">
+							<li class="circle"></li>
+							<li class="circle"></li>
+							<li class="circle"></li>
+						</ul>
+					</li>
+					<li class="boat-body"></li>
+				</ul>
+			</div>
+
+			<div class="absolute dark-back"></div>
+
+			<div class="absolute plane">
+				<ul class="no-bullet">
+					<li class="plane-body">
+						<ul class="windows inline-list">
+							<li class="circle"></li>
+							<li class="circle"></li>
+							<li class="circle"></li>
+							<li class="circle"></li>
+							<li class="circle"></li>
+						</ul>
+					</li>
+
+					<li class="wing1"></li>
+					<li class="wing1 flipwing"></li>
+					<li class="absolute teal"></li>
+				</ul>
+			</div>
+
+			<div class="absolute sea">
+				<span class="wave1"></span>
+				<span class="wave2"></span>
+				<span class="wave3"></span>
+				<span class="wave4"></span>
+			</div>
+
+        </section>
+                <div className = "absolute">
+                <div className="flex flex-col items-center justify-center z-100 absolute inset-0"> hi</div>
+                <div className = "text-2xl mt-[6%] mx-[5%]">Projects</div>
+
+                <div className = "text-lg my-1 mx-[5%] pb-10">Welcome to my projects page! Here, you can find my previous work where you can play and click on them on my website. Most the titles are also clickable so you can check out the actual website if you would like! </div>
+                  {items.map((item) => (
+                  <Listing title={item.title} text={item.text} tools={item.tools} carouselItems={item.carouselItems} github = {item.github}/>
+              ))}
+              </div>
+              </div>
     );
 }

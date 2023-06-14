@@ -22,8 +22,8 @@ export default function SecondaryNavigationBar() {
             </Link>
           </NavItem>
           <NavItem className="pr-8 text-white transform hover:scale-110 transition duration-300 ease-in-out">
-            <Link to="/blog">
-              <div className="text-white">Blog</div>
+            <Link to="/contact">
+              <div className="text-white">Contact</div>
             </Link>
           </NavItem>
         </Nav>

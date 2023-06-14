@@ -1,0 +1,332 @@
+
+.drawing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #1a2962;
+  background-image: radial-gradient(50vw 50vw at 50% 70%, #dc5e00, rgba(255, 255, 255, 0.0001) 70%);
+  background-repeat: no-repeat;
+  transition: transform 0.75s; /* Add transition property */
+}
+
+.drawing::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #050711;
+  background-image: radial-gradient(circle at 50% 0%, rgba(220, 94, 0, 0.25), rgba(255, 255, 255, 0.0001) 100%);
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(1); /* Add initial transform */
+  transition: transform 0.75s; /* Add transition property */
+}
+
+.drawing__overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  transition: 0.75s;
+  z-index: 2;
+}
+
+.drawing__overlay::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.drawing__overlay::after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 10px solid #dc5e00;
+  box-shadow: 0px 0px 0px 1000vw black;
+}
+
+.expanded {
+  transform: translate(-50%, -50%) scale(5);
+}
+
+
+
+.drawing__mountain {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  width: 50%;
+  z-index: 1;
+  background-color: #203049;
+  background-image: linear-gradient(90deg, rgba(246, 105, 0, 0.25), rgba(255, 255, 255, 0.0001) 20%);
+}
+.drawing__mountain::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.drawing__mountain:nth-of-type(1) {
+  transform: translatey(-12%) translatex(-60%) rotate(45deg);
+}
+.drawing__mountain:nth-of-type(2) {
+  transform: translatey(-20%) translatex(-40%) rotate(45deg);
+}
+.drawing__star {
+  position: fixed;
+  background-color: white;
+  border-radius: 50%;
+}
+.drawing__star::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.drawing__star:nth-of-type(1) {
+  top: 35%;
+  left: 37%;
+  width: 2px;
+}
+.drawing__star:nth-of-type(2) {
+  top: 40%;
+  left: 65%;
+  width: 2px;
+}
+.drawing__star:nth-of-type(3) {
+  top: 44%;
+  left: 50%;
+  width: 4px;
+}
+.drawing__star:nth-of-type(4) {
+  top: 43%;
+  left: 60%;
+  width: 2px;
+}
+.drawing__star:nth-of-type(5) {
+  top: 39%;
+  left: 40%;
+  width: 2px;
+}
+.drawing__star:nth-of-type(6) {
+  top: 32%;
+  left: 40%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(7) {
+  top: 28%;
+  left: 78%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(8) {
+  top: 80%;
+  left: 84%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(9) {
+  top: 79%;
+  left: 40%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(10) {
+  top: 50%;
+  left: 60%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(11) {
+  top: 95%;
+  left: 88%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(12) {
+  top: 1%;
+  left: 88%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(13) {
+  top: 78%;
+  left: 26%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(14) {
+  top: 13%;
+  left: 87%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(15) {
+  top: 69%;
+  left: 65%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(16) {
+  top: 7%;
+  left: 87%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(17) {
+  top: 28%;
+  left: 43%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(18) {
+  top: 81%;
+  left: 14%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(19) {
+  top: 6%;
+  left: 28%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(20) {
+  top: 4%;
+  left: 55%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(21) {
+  top: 19%;
+  left: 95%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(22) {
+  top: 15%;
+  left: 55%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(23) {
+  top: 10%;
+  left: 90%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(24) {
+  top: 7%;
+  left: 47%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(25) {
+  top: 65%;
+  left: 44%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(26) {
+  top: 42%;
+  left: 98%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(27) {
+  top: 27%;
+  left: 33%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(28) {
+  top: 27%;
+  left: 80%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(29) {
+  top: 58%;
+  left: 63%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(30) {
+  top: 85%;
+  left: 55%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(31) {
+  top: 99%;
+  left: 2%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(32) {
+  top: 44%;
+  left: 74%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(33) {
+  top: 53%;
+  left: 54%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(34) {
+  top: 80%;
+  left: 87%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(35) {
+  top: 72%;
+  left: 69%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(36) {
+  top: 62%;
+  left: 87%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(37) {
+  top: 17%;
+  left: 38%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(38) {
+  top: 32%;
+  left: 87%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(39) {
+  top: 81%;
+  left: 71%;
+  width: 1px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(40) {
+  top: 32%;
+  left: 62%;
+  width: 2px;
+}
+.drawing__star:not(:last-of-type):nth-of-type(41) {
+  top: 51%;
+  left: 61%;
+  width: 2px;
+}
+.drawing__star:last-of-type {
+  top: 39%;
+  left: 42%;
+  width: 1px;
+  height: 1px;
+}
+.drawing__star:last-of-type::before, .drawing__star:last-of-type::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 white;
+  content: '';
+}
+.drawing__star:last-of-type::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.drawing__star:last-of-type::after {
+  transform: translate(-50%, -50%);
+}
+.drawing__shooter {
+  position: fixed;
+  top: 30%;
+  left: 52%;
+  width: 15%;
+  height: 2px;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0.0001) 70%);
+  transform: rotate(-35deg);
+}

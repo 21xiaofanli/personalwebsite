@@ -5,10 +5,10 @@ import { GoMarkGithub } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
 export default function NavigationBar({color, absolute = true}) {
   return (
-    <div className={`pt-2 bg-transparent top-0 w-full z-50 ${absolute ? "absolute" : ""}`}>
+    <div className={`pt-2 bg-transparent top-0 w-full  z-50 ${absolute ? "absolute" : ""}`}>
     <Navbar light expand="md" className="pt-20 pb-25 ">
-      <NavbarBrand className="ml-10 ">
-        <h1 className = {color}>Xiaofan Li</h1>
+      <NavbarBrand className="ml-10 justify-left  ">
+        <h1 className = {`absolute top-0 transform mt-[.75rem] uppercase tracking-widest font-normal text-[2rem] ${color}`}>Xiaofan Li</h1>
       </NavbarBrand>
       <Nav className="ml-auto" navbar>
         <NavItem className="pr-5 transform hover:scale-125 transition duration-300 ease-in-out">

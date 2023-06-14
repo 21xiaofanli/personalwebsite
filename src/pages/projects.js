@@ -10,7 +10,7 @@ import ScrollingList from '../projects page/list';
 export default function ProjectsPage() {
   return (
     <div>
-      <NavigationBar absolute = {false}/>
+      <NavigationBar />
     <ScrollingList/>
     </div>
   )

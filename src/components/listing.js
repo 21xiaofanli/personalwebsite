@@ -36,11 +36,12 @@ export default function Listing({ title, text, github, tools, carouselItems }) {
     </div>
   );
   return (
-    <div className="flex flex-col flex-wrap justify-end items-end px-[4%]">
-      <div className=" w-[60%] rounded-2xl mx-[5%] ">
+    <div className="flex flex-col flex-wrap w-[60%] ml-auto pr-[5%]">
+
+      <div className=" w-full rounded-2xl mx-[5%] justify-right ">
       <Carousel fade interval={null} ref={carouselRef} controls = {false} >
   {carouselItems.map((item, index) => (
-    <Carousel.Item key={index} className="rounded h-[450px]">
+    <Carousel.Item key={index} className="rounded h-[450px] ">
       {item.image ? (
         <img src={item.image} alt={item.title} className="rounded-2xl w-[100%] h-[450px] border"/>
         
@@ -53,7 +54,7 @@ export default function Listing({ title, text, github, tools, carouselItems }) {
             width="100%"
             height="450"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
-            className="rounded-2xl border"
+            className="rounded-2xl border bg-white"
           />      )}
       <Carousel.Caption>
 
@@ -72,7 +73,7 @@ export default function Listing({ title, text, github, tools, carouselItems }) {
   ))}
 </Carousel>
      
-      <Description className = "w-[100%]">
+      <Description className = "w-[100%]  text-black">
             <div>
               <div class="flex justify-between mb-2">
                 <span class="order-1 text-xl font-semibold">{title}</span>

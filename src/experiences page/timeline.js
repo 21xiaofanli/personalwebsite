@@ -57,6 +57,8 @@ const items = [{
 export default function CustomizedTimeline() {
   return (
     <div className = "my-20">
+       <div className = "text-2xl mt-3 mx-[5%]">Experiences</div>
+        <div className = "text-lg my-1 mx-[5%] pb-10">Welcome to my experiences page! Here, you can find out more about what I've done in the previous organizations I've worked with! </div>
 <Chrono items={items} mode="VERTICAL_ALTERNATING" slidesShow >
     <div className="chrono-icons">
     {/* <img src= {require("./icons/ai.png")} alt = "hi"/>
