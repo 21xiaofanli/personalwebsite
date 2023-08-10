@@ -1,8 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { TypeAnimation } from 'react-type-animation';
 // import {HiOutlineArrowNarrowDown} from 'react-icons/hi';
+
 import './night.css';
 import './day.css';
+import './night2.css';
+import { init } from './night2.js';
 import NavigationBar from '../components/navbar'
 import {TbSunset, TbSunrise} from 'react-icons/tb';
 export default function Mainpage() {
@@ -13,18 +16,32 @@ export default function Mainpage() {
     const toggleTheme = () => {
       setTheme(!theme);
     };
+
+    useEffect(() => {
+      if(theme){init();}
+
+    }, [theme]); // Add theme as a dependency
     return (
       
         <div className = {`h-screen w-screen ${theme && 'bg-gradient-to-b from-[#040d30] from-40% via-[#383d95] via-70%  to-[#4c89c1] to-100%'}`}>
           {/* <NavigationBar/> */}
 
         {theme ? 
-        <div id="layers">
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
+        <div>
+
+<div class="noite"></div>
+
+<div class="constelacao"></div>
+
+<div class="lua">
+  <div class="textura"></div>
+</div>
+
+<div class="chuvaMeteoro"></div>
+{/* <script src = ></script> */}
+<div class="floresta">
+  <img src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
+</div>
       </div> : 
       <div class="totalcontainer"> 
       <div class="laya-please layer-1">

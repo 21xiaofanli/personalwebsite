@@ -1,0 +1,66 @@
+/* Colors */
+:root {
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --blue: #3498db;
+  --yellow: #f1c40f;
+  --purple: #8e44ad;
+  --turquoise: #1abc9c;
+}
+
+/* Reset styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* SVG */
+svg {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Scroll Element */
+.scrollElement {
+  position: absolute;
+  height: 6000px;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+/* Button */
+.btn {
+  position: fixed;
+  bottom: 5%;
+  right: 0px;
+  transform: translateX(-50%);
+  border: 1px solid #fd3a69;
+  border-radius: 15%;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7em;
+  background-color: transparent;
+  color: #fecd1a;
+  font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 11;
+}
+
+.btn_works {
+  left: 100px;
+  right: unset;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fd3a69;
+  color: #120078;
+}
