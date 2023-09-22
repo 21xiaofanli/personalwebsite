@@ -14,12 +14,12 @@ class App extends Component {
     return (
       <div className="wrapper">
         <BrowserRouter>
-          <SecondaryNavigationBar />
+          {/* <SecondaryNavigationBar /> */}
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* <Route path="/projects" element={<Projects />} />
             <Route path="/experiences" element={<Experiences />} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/contact" element={<Contact/>} /> */}
           </Routes>
         </BrowserRouter>
       </div>

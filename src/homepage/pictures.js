@@ -64,9 +64,11 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#080c1f] pt-5 text-center text-white">
+    <div className="text-center text-white bg-[#080c1f]">
+        <hr style={{ backgroundColor: 'grey', height: '2px', width: '60%', margin: '0 auto' }} />
+      <div className = "pt-20">
       <h2> People in my Life 💞</h2>
-      <p className="text-white">
+      <p>
         I wouldn't be where I am if it weren't for the people around me, so I
         wanted to showcase the ones who've helped me grow &lt;3
       </p>
@@ -98,6 +100,7 @@ export default function App() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

@@ -5,38 +5,8 @@ import { FaGithubAlt } from 'react-icons/fa';
 export default function Listing({ title, text, github, tools, carouselItems }) {
   const carouselRef = useRef(null);
 
-  // const handleIframeClick = () => {
-  //   const iframe = carouselRef.current.querySelector('iframe');
-  //   if (iframe) {
-  //     const player = new window.YT.Player(iframe);
-  //     player.pauseVideo();
-  //   }
-  // };
-  const handlePrevClick = () => {
-    if (carouselRef.current) {
-      carouselRef.current.prev();
-    }
-  };
-
-  const handleNextClick = () => {
-    if (carouselRef.current) {
-      carouselRef.current.next();
-    }
-  };
-
-  const CustomPrevIcon = () => (
-    <div className="prev-icon" onClick={handlePrevClick}>
-      {/* Custom previous icon */}
-    </div>
-  );
-
-  const CustomNextIcon = () => (
-    <div className="next-icon" onClick={handleNextClick}>
-      {/* Custom next icon */}
-    </div>
-  );
   return (
-    <div className="flex flex-col flex-wrap w-[60%] ml-auto pr-[5%]">
+    <div className="flex flex-col flex-wrap ml-auto pr-[5%]">
 
       <div className=" w-full rounded-2xl mx-[5%] justify-right ">
       <Carousel fade interval={null} ref={carouselRef} controls = {false} >
