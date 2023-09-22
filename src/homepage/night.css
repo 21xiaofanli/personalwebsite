@@ -44,7 +44,7 @@
       to { transform: translate3d(-710px, 0, 0); }
   }
   #layers .layer:nth-child(1) {
-      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s both, twinkle 1s ease-in -5s infinite alternate, layer-1 60s linear 1.4s infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .7s both, twinkle 1s ease-in -5s infinite alternate, layer-1 40s linear 1.4s infinite;
       background-image: url('http://imgur.com/9beLKl9.png');
   }
   
@@ -71,7 +71,7 @@
       to { transform: translate3d(-480px, 0, 0); }
   }
   #layers .layer:nth-child(4) {
-      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) .3s both, twinkle 4s ease-in -2s infinite alternate, layer-4 45s linear .7s infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) .3s both, twinkle 4s ease-in -2s infinite alternate, layer-4 20s linear .7s infinite;
       background-image: url('http://imgur.com/BqkETyl.png');
   }
   
@@ -80,7 +80,7 @@
       to { transform: translate3d(-886px, 0, 0); }
   }
   #layers .layer:nth-child(5) {
-      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) both, twinkle 3.5s ease-in infinite alternate, layer-5 40s linear infinite;
+      animation: slide-in-top 0.5s cubic-bezier(0.5, 0.46, 0.45, 0.94) both, twinkle 3.5s ease-in infinite alternate, layer-5 30s linear infinite;
       background-image: url('http://imgur.com/x1GB77K.png');
   }
   
