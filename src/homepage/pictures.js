@@ -67,10 +67,9 @@ export default function App() {
     <div className="text-center text-white bg-[#080c1f]">
         <hr style={{ backgroundColor: 'grey', height: '2px', width: '60%', margin: '0 auto' }} />
       <div className = "pt-20">
-      <h2> People in my Life 💞</h2>
+      <h2> People in my Life!</h2>
       <p>
-        I wouldn't be where I am if it weren't for the people around me, so I
-        wanted to showcase the ones who've helped me grow &lt;3
+      😊 💝 💫
       </p>
       <div className="flex flex-wrap justify-around">
         {images.map((image, index) => (

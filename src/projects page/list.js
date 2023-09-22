@@ -121,7 +121,6 @@ const items = [
     title: "Healthy & Wealthy",
     text: [" Healthy & Wealthy is a webapp that promotes healthy eating habits by rewarding students with coupons at healthy restaurants which they can redeem with points. Won 1st place at the Pygmalion Hackathon.", "Healthy & Wealthy was the very first project I've ever done in college! For the 2021 Pygmalion Hackathon, my friends and I a webapp that promotes healthy eating habits by rewarding UIUC students with coupons to healthy local restaurants which they can redeem with points from logging student's food eaten from the dining hall. As a software developer on this project, I worked on creating the UI of the application with vanilla HTML and CSS, and also worked on scraping the UIUC dining hall website for food data using Beautiful Soup and Python."],
     tools: ["HTML", "CSS", "Python", "Beautiful Soup"],
-    github: "https://github.com/21xiaofanli/UIUC-Healthy-and-Wealthy",
     type: "Projects",
     carouselItems: [
       {
@@ -144,6 +143,7 @@ const items = [
     const [filteredItems, setFilteredItems] = useState(items);
     const [selectedType, setSelectedType] = useState("All");
     const [selectedButton, setSelectedButton] = useState("All");
+    const [initialLoad, setInitialLoad] = useState(true); // Flag to track initial load
     const filteredItemsRef = useRef(null);
   
     const updateFilteredItems = useCallback(() => {
@@ -153,14 +153,15 @@ const items = [
       setFilteredItems(newFilteredItems);
       setSelectedButton(selectedType);
   
-      // Scroll the filtered items section to the top
-      if (filteredItemsRef.current) {
+      // Scroll the filtered items section to the top if a filter is selected and not on initial load
+      if (filteredItemsRef.current && selectedType !== "All" && !initialLoad) {
         filteredItemsRef.current.scrollIntoView({ behavior: "smooth" });
       }
-    }, [selectedType]);
+    }, [selectedType, initialLoad]);
   
     useEffect(() => {
       updateFilteredItems();
+      setInitialLoad(false); // Set the initialLoad flag to false after the first render
     }, [updateFilteredItems]);
   
     const handleFilter = (e) => {
@@ -169,37 +170,38 @@ const items = [
     };
   
     return (
-      <div className = "pb-20">
+      <div className="pb-20">
         <hr style={{ backgroundColor: 'grey', height: '2px', width: '60%', margin: '0 auto' }} />
-          <h2 className="mx-[5%] my-[2%] pt-10">Projects</h2>
-      <div className="mx-[4%] flex flex-wrap" >
-        <div className="flex flex-col md:w-[30%] w-[100%] h-[90%] sticky top-1/3">
-          {buttons.map((button, index) => (
-            <button
-              key={index}
-              value={button.type}
-              onClick={handleFilter}
-              className={`rounded mx-1 py-3 px-2 text-xl mt-2 ${
-                selectedButton === button.type ? 'bg-blue-500 text-white' : 'bg-transparent text-cyan-700'
-              }`}
-            >
-              {button.type}
-            </button>
-          ))}
+        <h2 className="mx-[5%] my-[2%] pt-10">Projects</h2>
+        <div className="mx-[4%] flex flex-wrap">
+          <div className="flex flex-col md:w-[30%] w-[100%] h-[90%] md:sticky md:top-1/3">
+            {buttons.map((button, index) => (
+              <button
+                key={index}
+                value={button.type}
+                onClick={handleFilter}
+                className={`rounded mx-1 py-3 px-2 text-xl mt-2 ${
+                  selectedButton === button.type ? 'bg-blue-500 text-white' : 'bg-transparent text-cyan-700'
+                }`}
+              >
+                {button.type}
+              </button>
+            ))}
+          </div>
+          <div className="inline-block w-[90%] md:w-[70%] justify-end" ref={filteredItemsRef}>
+            {filteredItems.map((item, index) => (
+              <Listing
+                key={index}
+                title={item.title}
+                text={item.text}
+                tools={item.tools}
+                carouselItems={item.carouselItems}
+                github={item.github}
+              />
+            ))}
+          </div>
         </div>
-        <div className=" inline-block w-[90%] md:w-[70%] justify-end" ref={filteredItemsRef}>
-          {filteredItems.map((item, index) => (
-            <Listing
-              key={index}
-              title={item.title}
-              text={item.text}
-              tools={item.tools}
-              carouselItems={item.carouselItems}
-              github={item.github}
-            />
-          ))}
-        </div>
-      </div>
       </div>
     );
-  }    
+  }
+  

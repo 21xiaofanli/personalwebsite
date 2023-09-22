@@ -56,21 +56,22 @@ export default function About() {
             <h4>Funfact 1: </h4>
             <h5> When did I start coding?</h5>
             </div>
-            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website for a startup I pursued. It was a fun experience, but coding was just a hobby back then. It wasn't until college that I started taking it more seriously. During freshman year, I only just started to understand the CS world, and began to learn Github protocols and new technologies like React.js and PyTorch. So to answer the question, I guess you could say both high school and college! </p>
+            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website. It was a fun experience since I got to play around with designing web pages , marking my first introduction to CS! It was only until college when I started to learn CS, where I got to learn new technologies like React.js and Github freshman year!</p>
          </Funfacts>
          <Funfacts className = "border-[3px]">
          <div>
             <h4>Funfact 2: </h4>
-            <h5> What is my favorite project?</h5>
+            <h5> What is my favorite CS experience ?</h5>
             </div>
-            <p> One of my favorite projects has to be creating a mobile app to store and teach people about endangered languages for the non-profit 7000 languages while on Hack4Impact. It was incredible to see how my code directly impacted thousands of people, especially when we received testing feedback from Algerian communities during client calls. This was one of the moments where it dawned on me at how code can be used for the greater good.</p>
+            <p> 
+              My favorite CS experience is my time on 7000 Languages for Hack4Impact. It marked the first time I witnessed my code being deployed into production and directly affecting thousands of people. Receiving testing feedback from Algerian communities during client calls was especially impactful, making me feel like I was truly making a positive difference in the world.</p>
          </Funfacts>
          <Funfacts className = "border-[3px]">
          <div>
             <h4>Funfact 3: </h4>
             <h5> What's my plan for the future?</h5>
             </div>
-            <p> Not sure! I've had diverse interests over the years, including entrepreneurship, programming, and math. However, one thing remains constant: my desire to use my skills to make a positive impact on my community. As I progressed through college, my love for coding grew stronger, and it became evident that coding is something I want to hold close to my heart for a long time. Looking ahead, my goal is to merge these two passions and create meaningful change in the future! </p>
+            <p> Not sure! I've had diverse interests over the years, including entrepreneurship, programming, and math. Throughout college, I would love to continue to discover and pursue different interests, especially within the CS field. For the time being, I am planning on going straight into the tech industry right after I graduate college! </p>
          </Funfacts>
          </div>
 
