@@ -73,7 +73,7 @@ export default function App() {
       </p>
       <div className="flex flex-wrap justify-around">
         {images.map((image, index) => (
-          <div className = "p-5">
+          <div className = "py-6 px-2">
           <div
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
