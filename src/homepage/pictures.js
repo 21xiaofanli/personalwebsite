@@ -66,7 +66,7 @@ export default function App() {
   return (
     <div className="text-center text-white bg-[#080c1f]">
         <hr style={{ backgroundColor: 'grey', height: '2px', width: '60%', margin: '0 auto' }} />
-      <div className = "pt-20">
+      <div className = "pt-20 pb-12">
       <h2> People in my Life!</h2>
       <p>
       😊 💝 💫
