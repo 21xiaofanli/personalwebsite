@@ -24,7 +24,7 @@ export default function About() {
     return(
        
         <div className = "h-fit w-screen ">
-        <div className = "flex justify-center items-center pt-20 ">
+        <div className = "flex justify-center items-center pt-32 ">
             <div className = "flex flex-wrap justify-around items-center px-[4%]">
                 <div className = "mr-[1%] w-[85%] md:w-[40%]">
                  <style>{`.carousel-inner > .carousel-item > img {border-radius: 25px;}`}</style>
