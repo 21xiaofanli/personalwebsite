@@ -56,7 +56,7 @@ export default function About() {
             <h4>Funfact 1: </h4>
             <h5> When did I start coding?</h5>
             </div>
-            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website. It was a fun experience since I got to play around with designing web pages , marking my first introduction to CS! It was only until college when I started to learn CS, where I got to learn new technologies like React.js and Github freshman year!</p>
+            <p> I began my coding journey in high school, starting with HTML and CSS to create my first website. It was a fun experience since I got to play around with designing web pages, marking my first introduction to CS! It was only until college when I started to dive deep into the CS world, where I got to learn new technologies like React.js and Github freshman year!</p>
          </Funfacts>
          <Funfacts className = "border-[3px]">
          <div>
@@ -71,7 +71,7 @@ export default function About() {
             <h4>Funfact 3: </h4>
             <h5> What's my plan for the future?</h5>
             </div>
-            <p> Not sure! I've had diverse interests over the years, including entrepreneurship, programming, and math. Throughout college, I would love to continue to discover and pursue different interests, especially within the CS field. For the time being, I am planning on going straight into the tech industry right after I graduate college! </p>
+            <p> Not sure! I've had diverse interests over the years, including entrepreneurship, programming, and math. Throughout college, I would love to continue to discover and pursue different interests, especially within computer science. For the time being, I am planning on going straight into the tech industry right after I graduate college! </p>
          </Funfacts>
          </div>
 

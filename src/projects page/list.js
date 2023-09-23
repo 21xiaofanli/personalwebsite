@@ -89,19 +89,19 @@ const items = [
       },
     ],
   },
-  {
-    title: "Automated Phone System",
-    text: ["During my time as a Software Engineering Intern at Purple Ant, I created an automated phone system for the company.", "Purple Ant is a software development company that specializes in insuring people against crypto scams. This was my first official experience learning CS! During my time as a software engineering intern at Purple Ant, I created an automated phone system for the company for their clients. This system allows clients to call the company and be redirected to the appropriate department based on their input. I worked on this project using Twilio's API and Java."],
-    tools: ["Java", "Twilio"],
-    type: "Previous Work",
-    carouselItems: [
-      {
-        url: ("https://www.purpleant.io/"),
-        desc: "Purple Ant's Website",
-      },
+  // {
+  //   title: "Automated Phone System",
+  //   text: ["During my time as a Software Engineering Intern at Purple Ant, I created an automated phone system for the company.", "Purple Ant is a software development company that specializes in insuring people against crypto scams. This was my first official experience learning CS! During my time as a software engineering intern at Purple Ant, I created an automated phone system for the company for their clients. This system allows clients to call the company and be redirected to the appropriate department based on their input. I worked on this project using Twilio's API and Java."],
+  //   tools: ["Java", "Twilio"],
+  //   type: "Previous Work",
+  //   carouselItems: [
+  //     {
+  //       url: ("https://www.purpleant.io/"),
+  //       desc: "Purple Ant's Website",
+  //     },
      
-    ],
-  },
+  //   ],
+  // },
   {
     title: "Band Buddies",
     text: ["Band Buddies is a web application that allows musicians to promote their work to their local community.", "Band Buddies is a web application that allows musicians to promote their work to their local community. It aims to provide a platform for musicians to connect with other musicians and venues to find gigs and jam with other musicians. As the lead software developer on this project, I worked on creating the UI of the application with React.js and dividing up tasks within the team."],
