@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c19431f5.css",
-    "main.js": "/static/js/main.075a24f4.js",
+    "main.css": "/static/css/main.d39e4716.css",
+    "main.js": "/static/js/main.2c19cecb.js",
     "static/js/787.6568e1bc.chunk.js": "/static/js/787.6568e1bc.chunk.js",
     "static/media/optum.png": "/static/media/optum.7dfd0082f1faa34d8ca6.png",
     "static/media/healthyandwealthy.mp4": "/static/media/healthyandwealthy.5ff51a693182d41f710c.mp4",
@@ -20,12 +20,12 @@
     "static/media/unofficial.jpeg": "/static/media/unofficial.e01a92ccf0fccd2b2af4.jpeg",
     "static/media/ai.jpg": "/static/media/ai.33ac0a702fe8cdb67b8f.jpg",
     "index.html": "/index.html",
-    "main.c19431f5.css.map": "/static/css/main.c19431f5.css.map",
-    "main.075a24f4.js.map": "/static/js/main.075a24f4.js.map",
+    "main.d39e4716.css.map": "/static/css/main.d39e4716.css.map",
+    "main.2c19cecb.js.map": "/static/js/main.2c19cecb.js.map",
     "787.6568e1bc.chunk.js.map": "/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c19431f5.css",
-    "static/js/main.075a24f4.js"
+    "static/css/main.d39e4716.css",
+    "static/js/main.2c19cecb.js"
   ]
 }
