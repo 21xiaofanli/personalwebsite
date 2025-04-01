@@ -1,7 +1,7 @@
 {
   "name": "personalwebsite",
   "version": "0.1.0",
-  "homepage": "https://21xiaofanli.github.io/",
+  "homepage": "https://21xiaofanli.github.io",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.11.16",
