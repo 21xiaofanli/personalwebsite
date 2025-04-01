@@ -35,11 +35,19 @@ export function init() {
   function loadMeteor() {
     randomInterval = getRandomArbitrary(5000, 10000);
     var meteor = "<div class='meteoro " + styles[getRandomArbitrary(0, 4)] + "'></div>";
-    document.getElementsByClassName('chuvaMeteoro')[0].innerHTML = meteor;
-    setTimeout(function () {
-      document.getElementsByClassName('chuvaMeteoro')[0].innerHTML = "";
-    }, 1000);
+    
+    var chuvaMeteoroElement = document.getElementsByClassName('chuvaMeteoro')[0];
+    
+    if (chuvaMeteoroElement) {
+      chuvaMeteoroElement.innerHTML = meteor;
+      setTimeout(function () {
+        chuvaMeteoroElement.innerHTML = "";
+      }, 1000);
+    } else {
+      console.error("Element with class 'chuvaMeteoro' not found.");
+    }
   }
+  
 
   document.addEventListener("visibilitychange", handleVisibilityChange);
 

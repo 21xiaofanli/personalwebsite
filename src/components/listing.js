@@ -52,7 +52,7 @@ export default function Listing({ title, text, github, tools, carouselItems }) {
               </div>
               <div className = "text-md">{text[0]}</div>
             </div>
-            <div className = "italic" >More about the project:</div>
+            {/* <div className = "italic" >More about the project:</div> */}
             <div className = "text-sm pl-8"> {text[1]}</div>
             <div className = "text-xs flex justify-end"> {text[2]}</div>
             <div className = "inline-flex flex-wrap justify-end">
